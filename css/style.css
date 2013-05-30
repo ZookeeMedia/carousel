@@ -1,0 +1,151 @@
+#carousel {
+	width:900px;
+	height:300px;	
+	margin:0 auto;
+	overflow:hidden;
+}
+
+#slides {
+	overflow:hidden;
+	/* fix ie overflow issue */
+	position:relative;
+	width:855px;
+	height:276px;
+	border:1px solid #ccc;
+}
+
+/* remove the list styles, width : item width * total items */	
+
+#slides ul.pix {
+	position:relative;
+	left:0;
+	top:0;
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+/* width of the item, in this case I put 250x250x gif */
+#slides ul.pix li {
+	width:855px;
+	height:276px;	
+	float:left;
+}
+
+#slides ul.pix li img {
+	/*padding:4px;*/
+}
+
+/* Styling for prev and next buttons */
+#buttons {
+	padding:0 0 5px 0;	
+	float:right;
+}
+
+#buttons a {
+	display:block; 
+	width:31px; 
+	height:32px;
+	text-indent:-999em;
+	float:left;
+	outline:0;
+}
+
+a#prev {
+	position:absolute;
+	top:0;
+	left:0;
+	width:31px; 
+	height:276px;
+	padding:130px 0 0 0;
+	cursor: pointer;
+	opacity: 0.65;
+	outline: none;
+	border: none;
+	border-color: transparent;
+	z-index: 10;
+}
+
+a#next {
+	position:absolute;
+	top:0;
+	right:0;
+	width:31px; 
+	height:276px;
+	padding:130px 0 0 0;
+	cursor: pointer;
+	opacity: 0.65;
+	outline: none;
+	border: none;
+	border-color: transparent;
+	z-index: 10;
+}
+
+a#next .carousel_right{
+	background:url(../carousel-sprite.png) 1px -31px no-repeat;
+	height:29px;
+	width:20px;
+	display: block;
+}
+
+a#prev .carousel_left{
+	background:url(../carousel-sprite.png) 10px -1px no-repeat;
+	height:29px;
+	width:34px;
+	display: block;
+}
+
+a#next .at, a#prev .at{
+	position: absolute!important;
+	clip: rect(1px 1px 1px 1px);
+	padding: 0;
+	border: 0;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	display: block;
+}
+
+a#next:hover, a#prev:hover {
+	opacity:1;
+}
+
+#controls {
+	bottom: 0;
+	height: 29px;
+	padding: 5px 0;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	z-index: 9;
+}
+
+#controls ul.pagination {
+	list-style:none;
+	margin:0 auto;
+	padding:0;
+	width: 114px;
+}
+
+#controls ul.pagination li {
+	float:left;
+	cursor:pointer;
+}
+
+#controls ul.pagination li span {
+	display:block;
+	margin: 0 5px;
+	width: 12px;
+	height: 12px;
+	cursor:pointer;
+}
+
+#controls ul.pagination li span.indicator_off {
+	background:url(../carousel-sprite.png) 1px -60px no-repeat;	
+}
+
+#controls ul.pagination li span.indicator_on {
+	background:url(../carousel-sprite.png) 1px -72px no-repeat;
+}
+
+.clear {clear:both}

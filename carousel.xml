@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<images>
+	<image>
+		<title>Slide 1</title>
+		<path>slide1.png</path>
+		<link></link>
+	</image>
+	<image>
+		<title>Slide 2</title>
+		<path>slide2.png</path>
+		<link></link>
+	</image>
+	<image>
+		<title>Slide 3</title>
+		<path>slide3.png</path>
+		<link></link>
+	</image>
+	<image>
+		<title>Slide 4</title>
+		<path>slide4.png</path>
+		<link></link>
+	</image>
+	<image>
+		<title>Slide 5</title>
+		<path>slide5.png</path>
+		<link>http://www.google.com</link>
+	</image>
+</images>
+
